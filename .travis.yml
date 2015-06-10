@@ -1,7 +1,8 @@
+language: generic
 script:
 
-bash ./13745136 20 12 = "4" | echo $?
+- bash ./13745136 20 12 = "4" | echo $?
 
-bash ./13745136 20 10 = "10" | echo $?
+- bash ./13745136 20 10 = "10" | echo $?
 
-bash ./13745136 20 2 = "2" | echo $?
+- bash ./13745136 20 2 = "2" | echo $?
