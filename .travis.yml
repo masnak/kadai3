@@ -1,9 +1,7 @@
 script:
- bash -e ./13745136
 
-while read f ; do
-  ANS=$(./$f 20 12)
+ bash -e ./13745136 20 12 > "$ANS"
+
   [ "ANS" -eq 4 ]
-  echo $f $ANS
-done
+
 
