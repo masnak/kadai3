@@ -1,6 +1,6 @@
 script:
 
- bash -e ./13745136 20 12 > "$ANS"
+ bash ./13745136 20 12 > "$ANS"
 
   [ "$ANS" -eq 4 ]
 
