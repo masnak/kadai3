@@ -39,8 +39,9 @@ while read f ; do
 done
 
 
-STATUS=`expr $ANS1 + $ANS2 + $ANS3`
+STATUS=`expr "$ANS1" + "$ANS2" + "$ANS3"`
 
+echo "$STATUS"
 
 if [ "$STATUS" -eq 0 ] ; then
 
@@ -48,7 +49,7 @@ if [ "$STATUS" -eq 0 ] ; then
 
 else
 
-  :
+  echo "GCD does not work"
 
 fi
 
