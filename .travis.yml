@@ -2,23 +2,4 @@ language: generic
 
 script:
 
-
-#!/bin/bash -e
-
-- ls 13745136 |
-
-while read f ; do
-
-       ANS=$(./$f 20 12)
-
-    [ "$ANS" -eq 4 ]
-
-    echo $?
-
-done
-
-
-#- bash ./13745136 20 10 = "10" ; echo $?
-
-#- bash ./13745136 20 2 = "2" ; echo $?
-
+- bash ./test.bash
