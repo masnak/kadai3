@@ -1,5 +1,7 @@
 language: generic
 
+script:
+
 #!/bin/bash -e
 
 ls 13745136 |
