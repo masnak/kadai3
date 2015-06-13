@@ -1,5 +1,6 @@
 language: generic
 
+
 tmp=/tmp/$$
 
 ERROR_EXIT () {
@@ -9,18 +10,12 @@ ERROR_EXIT () {
 }
 
 
+
 script:
 
-<<<<<<< HEAD
 - bash ./13745136 20 12 > $tmp-out1 ;  [ "$tmp-out1" = "4" ] ; echo $?
 
 #- bash ./13745136 20 10 = "10" ; echo $?
 
 #- bash ./13745136 20 2 = "2" ; echo $?
-=======
-- bash ./13745136 20 12 = "4" | echo $?
 
-- bash ./13745136 20 10 = "10" | echo $?
-
-- bash ./13745136 20 2 = "2" | echo $?
->>>>>>> 9ffa223f2c645102a85c27236164069e02e1b822
