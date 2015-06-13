@@ -8,7 +8,7 @@ while read f ; do
 
     [ "$ANS1" -eq 4 ]
 
-    echo $?
+    echo "Test1 OK"
 
 done
 
@@ -21,7 +21,7 @@ while read f ; do
 
     [ "$ANS2" -eq 5 ]
 
-    echo $?
+    echo "Test2 OK"
 
 done
 
@@ -34,8 +34,10 @@ while read f ; do
 
     [ "$ANS3" -eq 64 ]
 
-    echo $?
+    echo "Test3 OK"
 
 done
+
+
 
 

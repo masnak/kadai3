@@ -38,12 +38,6 @@ while read f ; do
 
 done
 
-if
-   [ "$ANS1" -eq 4 ] &&  [ "$ANS2" -eq 5 ] &&  [ "$ANS3" -eq 64 ]  ; then
-
-echo "GCD correctly works"
-
-fi
 
 
 
