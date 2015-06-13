@@ -4,22 +4,9 @@ ls 13745136 |
 
 while read f ; do
 
-       ANS=$(./$f 20 12)
+       ANS1=$(./$f 20 12)
 
-    [ "$ANS" -eq 4 ]
-
-    echo $?
-
-done
-
-
-ls 13745136 |
-
-while read f ; do
-
-       ANS=$(./$f 20 5)
-
-    [ "$ANS" -eq 5 ]
+    [ "$ANS1" -eq 4 ]
 
     echo $?
 
@@ -30,12 +17,33 @@ ls 13745136 |
 
 while read f ; do
 
-       ANS=$(./$f 1024 64)
+       ANS2=$(./$f 20 5)
 
-    [ "$ANS" -eq 64 ]
+    [ "$ANS2" -eq 5 ]
 
     echo $?
 
 done
+
+
+ls 13745136 |
+
+while read f ; do
+
+       ANS3=$(./$f 1024 64)
+
+    [ "$ANS3" -eq 64 ]
+
+    echo $?
+
+done
+
+if
+   [ "$ANS1" -eq 4 ] &&  [ "$ANS2" -eq 5 ] &&  [ "$ANS3" -eq 64 ]  ; then
+
+echo "GCD correctly works"
+
+fi
+
 
 
