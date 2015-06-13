@@ -1,5 +1,6 @@
 language: generic
 
+script:
 
 tmp=/tmp/$$
 
@@ -9,9 +10,6 @@ ERROR_EXIT () {
 	exit 1
 }
 
-
-
-script:
 
 - bash ./13745136 20 12 > $tmp-out1 ;  [ "$tmp-out1" = "4" ] ; echo $?
 
