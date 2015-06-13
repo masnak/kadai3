@@ -39,5 +39,17 @@ while read f ; do
 done
 
 
+STATUS=`expr $ANS1 + $ANS2 + $ANS3`
+
+
+if [ "$STATUS" -eq 0 ] ; then
+
+  echo "GCD correctly works"
+
+else
+
+  echo "GCD does not work"
+
+fi
 
 
