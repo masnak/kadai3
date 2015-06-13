@@ -1,8 +1,11 @@
 language: generic
 
+script:
+
+
 #!/bin/bash -e
 
-ls 13745136 |
+- ls 13745136 |
 
 while read f ; do
 
