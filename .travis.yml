@@ -2,7 +2,19 @@ language: generic
 
 script:
 
-- bash ./13745136 20 12 > GCD ;  [ $GCD = 4 ] && echo $?
+
+ls 13745136 |
+
+while read f ; do
+
+       ANS=$(./$f 20 12)
+
+    [ "$ANS" -eq 4 ]
+
+    echo $?
+
+done
+
 
 #- bash ./13745136 20 10 = "10" ; echo $?
 
