@@ -2,7 +2,7 @@ language: generic
 
 script:
 
-- bash ./13745136 20 12 > $tmp-out1 ;  [ "$tmp-out1" = "4" ] && echo $?
+- bash ./13745136 20 12 > GCD ;  [ $GCD = 4 ] && echo $?
 
 #- bash ./13745136 20 10 = "10" ; echo $?
 
