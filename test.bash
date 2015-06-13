@@ -12,7 +12,6 @@ while read f ; do
 
 done
 
-&&
 
 ls 13745136 |
 
@@ -26,7 +25,6 @@ while read f ; do
 
 done
 
-&&
 
 ls 13745136 |
 
