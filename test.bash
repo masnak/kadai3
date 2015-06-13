@@ -30,9 +30,9 @@ ls 13745136 |
 
 while read f ; do
 
-       ANS=$(./$f 256 12)
+       ANS=$(./$f 1024 64)
 
-    [ "$ANS" -eq 4 ]
+    [ "$ANS" -eq 64 ]
 
     echo $?
 
