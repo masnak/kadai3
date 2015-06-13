@@ -2,15 +2,6 @@ language: generic
 
 script:
 
-tmp=/tmp/$$
-
-ERROR_EXIT () {
-	echo "$1" >&2
-	rm -f $tmp-*
-	exit 1
-}
-
-
 - bash ./13745136 20 12 > $tmp-out1 ;  [ "$tmp-out1" = "4" ] ; echo $?
 
 #- bash ./13745136 20 10 = "10" ; echo $?
