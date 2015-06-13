@@ -32,7 +32,7 @@ while read f ; do
 
        ANS=$(./$f 256 12)
 
-    [ "$ANS" -eq 12 ]
+    [ "$ANS" -eq 4 ]
 
     echo $?
 
